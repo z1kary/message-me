@@ -5,10 +5,15 @@
 .btn-nav{
   margin-left: 25px!important;
 }
-.chat-message{
+#messages{
   height: 400px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
-.chat-message .summary{
+#messages .summary{
   width: 780px!important;
+}
+.input{
+  button {
+    display: none;
+  }
 }
