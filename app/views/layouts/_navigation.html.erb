@@ -5,14 +5,13 @@
     <div class="ui dropdown item">
       User <i class="dropdown icon"></i>
       <div class="menu">
-        <%= link_to 'Account', user_path(current_user), class: "item" %>
-        <%= link_to 'Logout', logout_path, class: "item" %>
+        <%= link_to 'Logout', logout_path, method: :delete, class: "item" %>
       </div>
     </div>
   <% end %>
   <% if !logged_in? %>
     <div class="item">
-        <%= link_to 'Sign up', signup_path, class: "ui primary button" %>
+        <%= link_to 'Sign up', signup_path, class: "ui orange button" %>
         <%= link_to 'Log in', login_path, class: "ui button btn-nav" %>
     </div>
   <% end %>

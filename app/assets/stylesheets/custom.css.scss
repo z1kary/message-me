@@ -1,7 +1,14 @@
 @import "semantic-ui";
 .chatbox{
-  height: 450px;
+  max-height: 500px;
 }
 .btn-nav{
   margin-left: 25px!important;
+}
+.chat-message{
+  height: 400px;
+  overflow-y: scroll;
+}
+.chat-message .summary{
+  width: 780px!important;
 }

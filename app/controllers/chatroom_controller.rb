@@ -1,6 +1,8 @@
 class ChatroomController < ApplicationController
+  before_action :require_user
+
   def index
-    redirect_to login_path if !logged_in?
+    @message = Message.new
     @messages = Message.all
   end
 end
